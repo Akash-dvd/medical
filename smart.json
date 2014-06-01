@@ -4,6 +4,8 @@
     "iron-router": {},
     "spin": {},
     "accounts-ui-bootstrap-dropdown": {},
-    "font-awesome": {}
+    "font-awesome": {},
+    "wizard": {},
+    "morris": {}
   }
 }

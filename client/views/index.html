@@ -2,7 +2,7 @@
 
                 <div class="row  border-bottom white-bg dashboard-header">
                     <div class="col-sm-3">
-                        <h2>Welcome Amelia</h2>
+                        <h2>Welcome Dr.Amelia</h2>
                         <small>You have 42 messages and 6 notifications.</small>
                         <ul class="list-group clear-list m-t">
                             <li class="list-group-item fist-item">
@@ -37,51 +37,74 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="flot-chart dashboard-chart">
-                            <div class="flot-chart-content" id="flot-dashboard-chart"></div>
-                        </div>
-                        <div class="row text-left">
-                            <div class="col-xs-4">
-                                <div class=" m-l-md">
-                                <span class="h4 font-bold m-t block">$ 406,100</span>
-                                <small class="text-muted m-b block">Sales marketing report</small>
-                                </div>
-                            </div>
-                            <div class="col-xs-4">
-                                <span class="h4 font-bold m-t block">$ 150,401</span>
-                                <small class="text-muted m-b block">Annual sales revenue</small>
-                            </div>
-                            <div class="col-xs-4">
-                                <span class="h4 font-bold m-t block">$ 16,822</span>
-                                <small class="text-muted m-b block">Half-year revenue margin</small>
-                            </div>
+                <div class="col-lg-6 ">
+                    <div class="panel blank-panel">
 
+                        <div class="panel-heading">
+                            <div class="panel-title m-b-md"><h4>Facility Appointment Description</h4></div>
+                            <div class="panel-options">
+
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="tabs_panels.html#tab-1">First Facility</a></li>
+                                    <li class=""><a data-toggle="tab" href="tabs_panels.html#tab-2">Second Facility</a></li>
+                                    <li class=""><a data-toggle="tab" href="tabs_panels.html#tab-3">Third Facility</a></li>
+                                
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="statistic-box">
-                        <h4>
-                            Project Beta progress
-                        </h4>
+
+                        <div class="panel-body">
+
+                            <div class="tab-content">
+                                <div id="tab-1" class="tab-pane active">
+                                    <strong>Facility 1</strong>
+
+                                    <p>Appointments -  </p>
+
+                                    <button class="btn btn-primary " type="button"><i class="fa fa-check"></i>&nbsp;Start</button>
+                                    <button class="btn btn-warning pull-right" type="button"><i class="fa fa-warning"></i><span class="bold">&nbsp;Cancel This Facility Today</span></button>
+                                </div>
+
+                                <div id="tab-2" class="tab-pane">
+                                    <strong>Facility 2</strong>
+
+                                    <p>Appointments -  </p>
+
+                                    <button class="btn btn-primary " type="button"><i class="fa fa-check"></i>&nbsp;Start</button>
+                                    <button class="btn btn-warning pull-right" type="button"><i class="fa fa-warning"></i> <span class="bold">&nbsp;Cancel This Facility Today</span></button>
+
+                                </div>
+                             
+                                <div id="tab-3" class="tab-pane">
+                                    <strong>Facility 3</strong>
+
+                                    <p>Appointments -  </p>
+
+                                    <button class="btn btn-primary " type="button"><i class="fa fa-check"></i>&nbsp;Start</button>
+                                    <button class="btn btn-warning pull-right" type="button"><i class="fa fa-warning"></i> <span class="bold">&nbsp;Cancel This Facility Today </span></button>
+
+                                </div>  
+                                <br>
+                                <br>              
                         <p>
-                            You have two project with not compleated task.
-                        </p>
-                            <div class="row text-center">
-                                <div class="col-lg-6">
-                                    <div class="chart easypiechart inline" data-percent="73"><span class="easypie-text">61%</span></div>
-                                    <h5 >Kolter</h5>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="chart2 easypiechart inline" data-percent="33"><span class="easypie-text">31%</span></div>
-                                    <h5 >Maxtor</h5>
-                                </div>
-                            </div>
-                            <div class="m-t">
-                                <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
-                            </div>
+                            <button type="button" class="btn btn-block btn-outline btn-primary btn-danger">Cancel Todays's Appointments</button>
+                        </p>                
 
                         </div>
+
+                    </div>
+                    </div>
+                </div>
+
+                    <div class="col-sm-3 gray-bg">
+
+                      <div class="ibox float-e-margins">
+                        
+                          <div class="ibox-content">
+                              <div id="morris-donut-chart" ></div>
+                          </div>
+                      </div>
+
                     </div>
 
             </div>

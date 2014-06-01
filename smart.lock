@@ -6,7 +6,9 @@
       "iron-router": {},
       "spin": {},
       "accounts-ui-bootstrap-dropdown": {},
-      "font-awesome": {}
+      "font-awesome": {},
+      "wizard": {},
+      "morris": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -34,10 +36,45 @@
         "tag": "v4.1.0",
         "commit": "ce6b1e92715d1938babc5d69c655c17e387f5926"
       },
+      "wizard": {
+        "git": "https://github.com/forwarder/meteor-wizard.git",
+        "tag": "v0.2.3",
+        "commit": "2871343bf9d7faca4543e9c3de46a3991665cf45"
+      },
+      "morris": {
+        "git": "https://github.com/chhib/meteor-morris.git",
+        "tag": "v0.0.1",
+        "commit": "34416106d7d4c978cc21c651a3ae6629a3f2132d"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
         "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
+      },
+      "autoform": {
+        "git": "https://github.com/aldeed/meteor-autoform.git",
+        "tag": "v0.10.0",
+        "commit": "4b298a025679a7e51892a884c11301c1d6bf19b3"
+      },
+      "raphael": {
+        "git": "https://github.com/chhib/meteor-raphael.git",
+        "tag": "v0.0.1",
+        "commit": "a90a37d8562bb7d2ddd559801caf61e28b85da4e"
+      },
+      "simple-schema": {
+        "git": "https://github.com/aldeed/meteor-simple-schema.git",
+        "tag": "v0.5.1",
+        "commit": "a29956b34d03a4591dbd0eaed9d37009ef48b8db"
+      },
+      "collection2": {
+        "git": "https://github.com/aldeed/meteor-collection2.git",
+        "tag": "v0.4.0",
+        "commit": "5648f7c53ee98f3ac8fbe82a55e6fd78fc67cfbc"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.6.0",
+        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
       }
     }
   }

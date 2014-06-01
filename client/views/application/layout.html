@@ -10,7 +10,7 @@
                         <div class="dropdown profile-element"> <span>
                             <img alt="image" class="img-circle" src="img/profile_small.jpg" />
                              </span>
-                            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="/#">
                             <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Amelia Smith</strong>
                              </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
@@ -27,59 +27,14 @@
 
                     </li>
                     
-                    <div class="panel-group" id="accordion">
-                      <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                              Collapsible Group Item #1
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse in">
-                          <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                              Collapsible Group Item #2
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse">
-                          <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                              Collapsible Group Item #3
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse">
-                          <div class="panel-body nav nav-second-level">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
                     
                     <li class="active" >
-                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span> </a>
+                        <a href="/"><i class="fa fa-th-large"></i> <span class="nav-label">Home</span> </a>
 
                     </li>
 
                     <li>
-                        <a href="index.html#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span class="fa arrow"></span></a>
+                        <a href="/#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Statistics</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="{{pathFor 'graph_flot'}}">Flot Charts</a></li>
                             <li><a href="{{pathFor 'graph_morris'}}">Morris.js Charts</a></li>
@@ -89,15 +44,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="{{pathFor 'mailbox'}}"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning pull-right">16/24</span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="{{pathFor 'mailbox'}}">Inbox</a></li>
-                            <li><a href="{{pathFor 'mail_detail'}}">Email view</a></li>
-                            <li><a href="{{pathFor 'mail_compose'}}">Compose email</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="index.html#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
+                        <a href="/#"><i class="fa fa-edit"></i> <span class="nav-label">History</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="{{pathFor 'form_basic'}}">Basic form</a></li>
                             <li><a href="{{pathFor 'form_advanced'}}">Advanced Plugins</a></li>
@@ -106,8 +53,37 @@
                             <li><a href="{{pathFor 'form_editors'}}">Text Editor</a></li>
                         </ul>
                     </li>
+                    <li >
+                        <a href="/#"><i class="fa fa-flask"></i> <span class="nav-label">Events</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="{{pathFor 'typography'}}">Typography</a></li>
+                            <li><a href="{{pathFor 'icons'}}">Icons</a></li>
+                            <li><a href="{{pathFor 'draggable_panels'}}">Draggable Panels</a></li>
+                            <li><a href="{{pathFor 'buttons'}}">Buttons</a></li>
+                            <li><a href="{{pathFor 'tabs_panels'}}">Tabs & Panels</a></li>
+                            <li><a href="{{pathFor 'notifications'}}">Notifications & Tooltips</a></li>
+                            <li><a href="{{pathFor 'badges_labels'}}">Badges, Labels, Progress</a></li>
+                        </ul>
+                    </li>
                     <li>
-                        <a href="index.html#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span>  <span class="pull-right label label-primary">SPECIAL</span></a>
+                        <a href="/#"><i class="fa fa-laptop"></i> <span class="nav-label">Guess Tools</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="{{pathFor 'grid_options'}}">Grid options</a></li>
+                            <li><a href="{{pathFor 'boxed_layout'}}">Boxed layout</a></li>
+                        </ul>
+                    </li>
+                 
+                    <li>
+                        <a href="{{pathFor 'mailbox'}}"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning pull-right">16/24</span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="{{pathFor 'mailbox'}}">Inbox</a></li>
+                            <li><a href="{{pathFor 'mail_detail'}}">Email view</a></li>
+                            <li><a href="{{pathFor 'mail_compose'}}">Compose email</a></li>
+                        </ul>
+                    </li>
+                   
+                    <li>
+                        <a href="/#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span>  <span class="pull-right label label-primary">SPECIAL</span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="{{pathFor 'contacts'}}">Contacts</a></li>
                             <li><a href="{{pathFor 'profile'}}">Profile</a></li>
@@ -121,7 +97,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="index.html#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
+                        <a href="/#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="{{pathFor 'search_results'}}">Search results</a></li>
                             <li><a href="{{pathFor 'lockscreen'}}">Lockscreen</a></li>
@@ -130,35 +106,16 @@
                             <li><a href="{{pathFor 'empty_page'}}">Empty page</a></li>
                         </ul>
                     </li>
-
-                    <li >
-                        <a href="index.html#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="{{pathFor 'typography'}}">Typography</a></li>
-                            <li><a href="{{pathFor 'icons'}}">Icons</a></li>
-                            <li><a href="{{pathFor 'draggable_panels'}}">Draggable Panels</a></li>
-                            <li><a href="{{pathFor 'buttons'}}">Buttons</a></li>
-                            <li><a href="{{pathFor 'tabs_panels'}}">Tabs & Panels</a></li>
-                            <li><a href="{{pathFor 'notifications'}}">Notifications & Tooltips</a></li>
-                            <li><a href="{{pathFor 'badges_labels'}}">Badges, Labels, Progress</a></li>
-                        </ul>
-                    </li>
                     <li>
-                        <a href="index.html#"><i class="fa fa-laptop"></i> <span class="nav-label">Layout</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="{{pathFor 'grid_options'}}">Grid options</a></li>
-                            <li><a href="{{pathFor 'boxed_layout'}}">Boxed layout</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="index.html#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa arrow"></span></a>
+                    
+                        <a href="/#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="{{pathFor 'table_basic'}}">Static Tables</a></li>
                             <li><a href="{{pathFor 'table_data_tables'}}">Data Tables</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="index.html#"><i class="fa fa-picture-o"></i> <span class="nav-label">Gallery</span><span class="fa arrow"></span></a>
+                        <a href="/#"><i class="fa fa-picture-o"></i> <span class="nav-label">Gallery</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="{{pathFor 'basic_gallery'}}">Basic Gallery</a></li>
                             <li><a href="{{pathFor 'carousel'}}">Bootstrap Carusela</a></li>
@@ -166,28 +123,28 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="index.html#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
+                        <a href="/#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="index.html#">Third Level <span class="fa arrow"></span></a>
+                                <a href="/#">Third Level <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
                                     <li>
-                                        <a href="index.html#">Third Level Item</a>
+                                        <a href="/#">Third Level Item</a>
                                     </li>
                                     <li>
-                                        <a href="index.html#">Third Level Item</a>
+                                        <a href="/#">Third Level Item</a>
                                     </li>
                                     <li>
-                                        <a href="index.html#">Third Level Item</a>
+                                        <a href="/#">Third Level Item</a>
                                     </li>
 
                                 </ul>
                             </li>
-                            <li><a href="index.html#">Second Level Item</a></li>
+                            <li><a href="/#">Second Level Item</a></li>
                             <li>
-                                <a href="index.html#">Second Level Item</a></li>
+                                <a href="/#">Second Level Item</a></li>
                             <li>
-                                <a href="index.html#">Second Level Item</a></li>
+                                <a href="/#">Second Level Item</a></li>
                         </ul>
                     </li>
                     <li>
@@ -202,7 +159,7 @@
            <div class="row border-bottom">
            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
-            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="index.html#"><i class="fa fa-bars"></i> </a>
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="/#"><i class="fa fa-bars"></i> </a>
             <form role="search" class="navbar-form-custom" method="post" action="search_results.html">
                 <div class="form-group">
                     <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
@@ -214,7 +171,7 @@
                     <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
                 </li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="index.html#">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="/#">
                         <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
                     </a>
                     <ul class="dropdown-menu dropdown-messages">
@@ -267,7 +224,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="index.html#">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="/#">
                         <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
                     </a>
                     <ul class="dropdown-menu dropdown-alerts">
