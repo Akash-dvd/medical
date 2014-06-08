@@ -6,6 +6,7 @@
     "accounts-ui-bootstrap-dropdown": {},
     "font-awesome": {},
     "wizard": {},
-    "morris": {}
+    "morris": {},
+    "peity": {}
   }
 }

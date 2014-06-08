@@ -1,0 +1,58 @@
+<template name="index_workplace">
+ 
+<h2>Facility Appointment Description</h2>
+  <div class="panel blank-panel">
+   
+    <div class="ibox float-e-margins ">
+       <div class="ibox-content ibox-heading ">
+          <table class="table table-hover">
+              <thead>
+              <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                  <th>Today's Slots</th>
+                  <th>Actions</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                {{#each c_Workplace}}
+                  {{> index_workplace_list }}
+                {{/each}}
+              </tr>
+              </tbody>
+          </table>
+        </div>
+      </div>
+  </div>
+                 
+  
+ <!--
+                   <th>#</th>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                  <th>Today's Slots</th>
+                  <th>Actions</th> 
+                  -->
+ <td>1</td>
+
+ <td>{{name}}</td>
+ <td class="text-navy"> <i class="fa fa-level-up"></i> 40% </td>
+ <td><span class="pie">0.52,1.041</span></td>
+ <td>
+   <button class="btn btn-primary " type="button"><i class="fa fa-check"></i>&nbsp;Start</button>
+   <div class="btn-group">
+     <button data-toggle="dropdown" class="btn btn-warning dropdown-toggle">Action <span class="caret"></span></button>
+     <ul class="dropdown-menu">
+         <li><a href="buttons.html#">Start</a></li>
+         <li><a href="buttons.html#">Pause</a></li>
+         <li><a href="buttons.html#">Postpone</a></li>
+         <li class="divider"></li>
+         <li><a href="buttons.html#">Cancel</a></li>
+     </ul>
+ </div>
+ </td>  
+</template>

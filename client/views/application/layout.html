@@ -1,6 +1,4 @@
 <template name="layout">
-  
-
     <div id="wrapper">
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
@@ -29,12 +27,17 @@
                     
                     
                     <li class="active" >
-                        <a href="/"><i class="fa fa-th-large"></i> <span class="nav-label">Home</span> </a>
+                        <a href="{{pathFor 'index'}}#"><i class="fa fa-th-large"></i> <span class="nav-label">Home</span> </a>
 
                     </li>
-
                     <li>
-                        <a href="/#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Statistics</span><span class="fa arrow"></span></a>
+                        <a href="{{pathFor 'index'}}#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Appointment</span><span class="fa arrow"></span></a>
+                        
+                          {{> appointment_list}}
+                        
+                    </li>
+                    <li>
+                        <a href="{{pathFor 'index'}}#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Statistics</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="{{pathFor 'graph_flot'}}">Flot Charts</a></li>
                             <li><a href="{{pathFor 'graph_morris'}}">Morris.js Charts</a></li>
@@ -44,7 +47,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="/#"><i class="fa fa-edit"></i> <span class="nav-label">History</span><span class="fa arrow"></span></a>
+                        <a href="{{pathFor 'index'}}#"><i class="fa fa-edit"></i> <span class="nav-label">History</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="{{pathFor 'form_basic'}}">Basic form</a></li>
                             <li><a href="{{pathFor 'form_advanced'}}">Advanced Plugins</a></li>
@@ -54,7 +57,7 @@
                         </ul>
                     </li>
                     <li >
-                        <a href="/#"><i class="fa fa-flask"></i> <span class="nav-label">Events</span><span class="fa arrow"></span></a>
+                        <a href="{{pathFor 'index'}}#"><i class="fa fa-flask"></i> <span class="nav-label">Events</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="{{pathFor 'typography'}}">Typography</a></li>
                             <li><a href="{{pathFor 'icons'}}">Icons</a></li>
@@ -66,7 +69,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="/#"><i class="fa fa-laptop"></i> <span class="nav-label">Guess Tools</span><span class="fa arrow"></span></a>
+                        <a href="{{pathFor 'index'}}#"><i class="fa fa-laptop"></i> <span class="nav-label">Guess Tools</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="{{pathFor 'grid_options'}}">Grid options</a></li>
                             <li><a href="{{pathFor 'boxed_layout'}}">Boxed layout</a></li>
@@ -83,7 +86,7 @@
                     </li>
                    
                     <li>
-                        <a href="/#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span>  <span class="pull-right label label-primary">SPECIAL</span></a>
+                        <a href="{{pathFor 'index'}}#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span>  <span class="pull-right label label-primary">SPECIAL</span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="{{pathFor 'contacts'}}">Contacts</a></li>
                             <li><a href="{{pathFor 'profile'}}">Profile</a></li>
@@ -97,25 +100,25 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="/#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
+                        <a href="{{pathFor 'index'}}#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="{{pathFor 'search_results'}}">Search results</a></li>
                             <li><a href="{{pathFor 'lockscreen'}}">Lockscreen</a></li>
-                            <li><a href="{{pathFor 'fourzerozero'}}">404 Page</a></li>
+                            <li><a href="{{pathFor 'fourzerofour'}}">404 Page</a></li>
                             <li><a href="{{pathFor 'fivezerozero'}}">500 Page</a></li>
                             <li><a href="{{pathFor 'empty_page'}}">Empty page</a></li>
                         </ul>
                     </li>
                     <li>
                     
-                        <a href="/#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa arrow"></span></a>
+                        <a href="{{pathFor 'index'}}#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="{{pathFor 'table_basic'}}">Static Tables</a></li>
                             <li><a href="{{pathFor 'table_data_tables'}}">Data Tables</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="/#"><i class="fa fa-picture-o"></i> <span class="nav-label">Gallery</span><span class="fa arrow"></span></a>
+                        <a href="{{pathFor 'index'}}#"><i class="fa fa-picture-o"></i> <span class="nav-label">Gallery</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="{{pathFor 'basic_gallery'}}">Basic Gallery</a></li>
                             <li><a href="{{pathFor 'carousel'}}">Bootstrap Carusela</a></li>
@@ -123,7 +126,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="/#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
+                        <a href="{{pathFor 'index'}}#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="/#">Third Level <span class="fa arrow"></span></a>
@@ -148,7 +151,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS Animations </span><span class="label label-info pull-right">62</span></a>
+                        <a href="{{pathFor 'css_animations'}}"><i class="fa fa-magic"></i> <span class="nav-label">CSS Animations </span><span class="label label-info pull-right">62</span></a>
                     </li>
                 </ul>
 

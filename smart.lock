@@ -8,7 +8,8 @@
       "accounts-ui-bootstrap-dropdown": {},
       "font-awesome": {},
       "wizard": {},
-      "morris": {}
+      "morris": {},
+      "peity": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -46,6 +47,11 @@
         "tag": "v0.0.1",
         "commit": "34416106d7d4c978cc21c651a3ae6629a3f2132d"
       },
+      "peity": {
+        "git": "https://github.com/waydin/peity.git",
+        "tag": "v0.0.2",
+        "commit": "6b7a89cf0d0b51d4e344e994a6bbface68ef965f"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
@@ -53,8 +59,8 @@
       },
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",
-        "tag": "v0.10.0",
-        "commit": "4b298a025679a7e51892a884c11301c1d6bf19b3"
+        "tag": "v0.11.0",
+        "commit": "efdffcdf836a45c50c39696ede15399177ccb9fa"
       },
       "raphael": {
         "git": "https://github.com/chhib/meteor-raphael.git",
