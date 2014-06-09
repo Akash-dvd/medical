@@ -3,10 +3,10 @@
     "bootstrap-3": {},
     "iron-router": {},
     "spin": {},
-    "accounts-ui-bootstrap-dropdown": {},
     "font-awesome": {},
     "wizard": {},
     "morris": {},
-    "peity": {}
+    "peity": {},
+    "accounts-ui-bootstrap-3": {}
   }
 }

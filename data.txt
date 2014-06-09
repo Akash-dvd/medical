@@ -1,6 +1,6 @@
-//db.dropDatabase(); 
+db.dropDatabase(); 
 
-//use health; 
+use meteor; 
 
 function getNext(name) {
    var ret = db.counters.findAndModify(
@@ -19,6 +19,10 @@ function getNext(name) {
 db.counters.insert(
   [ {
       _id: "user_id",
+      seq: 0
+   },
+   {
+      _id: "doctor_id",
       seq: 0
    },
    {
@@ -47,50 +51,50 @@ db.counters.insert(
    }]
 );
 
-db.notifications.insert({"owner" : {$ref : "user", $id : "1", $db : "health"}, "contents" : [{message : "This is notification","created_at" : new Date()},{message : "This is notification2","created_at" : new Date()}]});
+db.notifications.insert({"owner" : {$ref : "user", $id : "1", $db : "meteor"}, "contents" : [{message : "This is notification","created_at" : new Date()},{message : "This is notification2","created_at" : new Date()}]});
 db.notifications.ensureIndex({"owner.$id":1},{background:true,unique:true});
 
 
 
-db.images.insert({"owner" : {$ref : "user", $id : 1, $db : "health"},img_file:"../images/user_1.png"}); 
-db.images.insert({"owner" : {$ref : "user", $id : 2, $db : "health"},img_file:"../images/user_2.png"}); 
-db.images.insert({"owner" : {$ref : "user", $id : 3, $db : "health"},img_file:"../images/user_3.png"}); 
-db.images.insert({"owner" : {$ref : "user", $id : 4, $db : "health"},img_file:"../images/user_4.png"}); 
-db.images.insert({"owner" : {$ref : "user", $id : 5, $db : "health"},img_file:"../images/user_5.png"}); 
+db.images.insert({"owner" : {$ref : "user", $id : 1, $db : "meteor"},img_file:"../images/user_1.png"}); 
+db.images.insert({"owner" : {$ref : "user", $id : 2, $db : "meteor"},img_file:"../images/user_2.png"}); 
+db.images.insert({"owner" : {$ref : "user", $id : 3, $db : "meteor"},img_file:"../images/user_3.png"}); 
+db.images.insert({"owner" : {$ref : "user", $id : 4, $db : "meteor"},img_file:"../images/user_4.png"}); 
+db.images.insert({"owner" : {$ref : "user", $id : 5, $db : "meteor"},img_file:"../images/user_5.png"}); 
 
 
 
-db.blood_requests.insert({"_id": getNext("bloodreq_id"), "blood_group": "O+", "owner" : {$ref : "user", $id : 1, $db : "health"}, "contact_nos": ["9448201098","8909890908"], "description": "I Need Blood urgently" , "date" : new Date() , "fake_level": 0 });
+db.blood_requests.insert({"_id": getNext("bloodreq_id"), "blood_group": "O+", "owner" : {$ref : "user", $id : 1, $db : "meteor"}, "contact_nos": ["9448201098","8909890908"], "description": "I Need Blood urgently" , "date" : new Date() , "fake_level": 0 });
 db.blood_requests.ensureIndex({"owner.$id":1},{background:true});
 db.blood_requests.ensureIndex({"blood_group":1},{background:true});
 db.blood_requests.ensureIndex({"date":1},{background:true}); 
 
-db.health_profile.insert({"owner" : {$ref : "user", $id : 1, $db : "health"},height:5.6,weight:55,blood_sugar:"nil",ailments:["body pain","knee pain"],hobbies:["smoking","jogging"]}); 
+db.health_profile.insert({"owner" : {$ref : "user", $id : 1, $db : "meteor"},height:5.6,weight:55,blood_sugar:"nil",ailments:["body pain","knee pain"],hobbies:["smoking","jogging"]}); 
 db.health_profile.ensureIndex({"owner.$id":1},{background:true,unique:true});
 db.health_profile.ensureIndex({ailments:1},{background:true,sparse:true});
 db.health_profile.ensureIndex({hobbies:1},{background:true,sparse:true});
 
 
-db.fake_user.insert({"user_fake" : {$ref : "user", $id : 2, $db : "health"}, "reported_by" : {$ref : "user", $id : 5, $db : "health"}, comment :"Is a fake user " }); 
+db.fake_user.insert({"user_fake" : {$ref : "user", $id : 2, $db : "meteor"}, "reported_by" : {$ref : "user", $id : 5, $db : "meteor"}, comment :"Is a fake user " }); 
 db.fake_user.ensureIndex({"user_fake.$id":1},{background:true});
 db.fake_user.ensureIndex({"reported_by.$id":1},{background:true});
 
-db.events.insert({_id:getNext("event_id"), name:"MyEvent",city:"Bangalore",address:"m.h., south-west ",description:"Do attend",date:new Date(), "owner" : {$ref : "user", $id : 1, $db : "health"}, attendees_maybe:[1,3,5], attendees_going:[6,7,1]});
+db.events.insert({_id:getNext("event_id"), name:"MyEvent",city:"Bangalore",address:"m.h., south-west ",description:"Do attend",date:new Date(), "owner" : {$ref : "user", $id : 1, $db : "meteor"}, attendees_maybe:[1,3,5], attendees_going:[6,7,1]});
 db.events.ensureIndex({"owner.$id":1},{background:true});
 db.events.ensureIndex({city:1},{background:true});
 
-db.remainders.insert({"owner" : {$ref : "user", $id : 1, $db : "health"}, remainders:{message:"have appointment on 12-4-2014 at 13:40",expireat:new Date('May 15 2014,15:15:00') }}); 
-db.remainders.insert({"owner" : {$ref : "user", $id : 1, $db : "health"}, remainders:{message:"event at bangalore",expireat:new Date('May 16 2014,13:40:00')}}); 
-db.remainders.ensureIndex({"owner.$id":1},{background:true});
-db.remainders.ensureIndex({"remainders.expireat":1},{"expireAfterSeconds":0}); 
+db.reminders.insert({"owner" : {$ref : "user", $id : 1, $db : "meteor"}, reminders:{message:"have appointment on 12-4-2014 at 13:40",expireat:new Date('May 15 2014,15:15:00') }}); 
+db.remainders.insert({"owner" : {$ref : "user", $id : 1, $db : "meteor"}, reminders:{message:"event at bangalore",expireat:new Date('May 16 2014,13:40:00')}}); 
+db.reminders.ensureIndex({"owner.$id":1},{background:true});
+db.reminders.ensureIndex({"remainders.expireat":1},{"expireAfterSeconds":0}); 
 
 
-db.cases.insert({_id:getNext("case_id"),"owner" : {$ref : "user", $id : 1, $db : "health"},status:"open",date_begin:new Date(), appointment_ids:[4,78],case_notes:[{created_by:5,created_at:new Date(),message:"this is a case note"}] });
+db.cases.insert({_id:getNext("case_id"),"owner" : {$ref : "user", $id : 1, $db : "meteor"},status:"open",date_begin:new Date(), appointment_ids:[4,78],case_notes:[{created_by:5,created_at:new Date(),message:"this is a case note"}] });
 db.cases.ensureIndex({"owner.$id":1,status:1},{background:true});
 db.cases.ensureIndex({"appointment_ids":1},{background:true});
 
 
-db.appointments.insert({_id:getNext("appointment_id"),"case_id" : {$ref : "cases", $id : 1, $db : "health"},"user" : {$ref : "user", $id : 1, $db : "health"},"doctor" : {$ref : "user", $id : 1, $db : "health"},status:"closed",date:new Date(), description:"this is optional field"}); 
+db.appointments.insert({_id:getNext("appointment_id"),"case_id" : {$ref : "cases", $id : 1, $db : "meteor"},"user" : {$ref : "user", $id : 1, $db : "meteor"},"doctor" : {$ref : "user", $id : 1, $db : "meteor"},status:"closed",date:new Date(), description:"this is optional field"}); 
 db.appointments.ensureIndex({"user.$id":1,status:1});
 db.appointments.ensureIndex({"doctor.$id":1,status:1});
 db.appointments.ensureIndex({"date":1});
@@ -106,23 +110,31 @@ db.users.ensureIndex({gender:1},{background:true});
 db.users.ensureIndex({date_joined:1},{background:true});
 db.users.ensureIndex({blood_group:1},{background:true,sparse:true});
 db.users.ensureIndex({city:1},{background:true});
-db.users.ensureIndex({"doctor_fields.speciality":1},{background:true,sparse:true});
 db.users.ensureIndex({is_depedent:1},{background:true,sparse:true});
 
+db.doctor.insert({_id:getNext("doctor_id"),email_id:"all@all.com",password:"me123",name:"JOhn",contact_nos:["944568986","780984540"], dob:new Date('July 6 1983'), gender:"Male", date_joined:new Date(), blood_group:"O+", city:"Bangalore",address:{street:"abcd nagar",pin:"560037"}, doctor_fields:{speciality:"cardiac surgeon", short_description:"I am bad doctor", doctor_qualification:"SSLC"},education_details:[{course_name:"M.B.B.S",college_name: "abcd", city:"bangalore", country:"India",year_of_passing:new Date('1998')}], notes:[{created_at:new Date(), content:" is a note"}],pinned_case_ids:[3,6,8]});
 
-db.doctor_extra.insert({"doctor" : {$ref : "user", $id : 1, $db : "health"},education_details:[{course_name:"M.B.B.S",college_name:"abcd", city:"bangalore", country:"India",year_of_passing:new Date('1998')}], notes:[{created_at:new Date(), content:" is a note"}],pinned_case_ids:[3,6,8]});
-db.doctor_extra.ensureIndex({"education_details.course_name":1},{background:true});
-db.doctor_extra.ensureIndex({"doctor.$id":1},{background:true});
+db.doctor.insert({_id:getNext("doctor_id"),email_id:"all@all.com",password:"me123",name:"Ohn",contact_nos:["944568986","780984540"], dob:new Date('July 6 1983'), gender:"Male", date_joined:new Date(), blood_group:"O+", city:"Bangalore",address:{street:"abcd nagar",pin:"560037"}, doctor_fields:{speciality:"Dentist", short_description:"I am bad doctor", doctor_qualification:"SSLC"},education_details:[{course_name:"M.B.B.S",college_name: "abcd", city:"bangalore", country:"India",year_of_passing:new Date('1998')}], notes:[{created_at:new Date(), content:" is a note"}],pinned_case_ids:[3,6,8]});
 
 
-db.workplace.insert({_id:getNext("workplace_id"),"doctor" : {$ref : "user", $id : 1, $db : "health"},name:"my clinic",city:"bangalore",address:{street:"M,H",pin:"79889"},contact_nos:["8989898908"],type:"clinic"});
+db.doctor.ensureIndex({"doctor_fields.speciality":1},{background:true,sparse:true});
+db.doctor.ensureIndex({email_id:1},{background:true});
+db.doctor.ensureIndex({contact_nos:1},{background:true});
+db.doctor.ensureIndex({gender:1},{background:true});
+db.doctor.ensureIndex({date_joined:1},{background:true});
+db.doctor.ensureIndex({city:1},{background:true});
+db.doctor.ensureIndex({"education_details.course_name":1},{background:true});
+
+
+
+db.workplace.insert({_id:getNext("workplace_id"),"doctor" : {$ref : "doctor", $id : 1, $db : "meteor"},name:"my clinic",city:"bangalore",address:{street:"M,H",pin:"79889"},contact_nos:["8989898908"],type:"clinic"});
 db.workplace.ensureIndex({"doctor.$id":1});
 
 
 
 
 
-db.wk_desc.insert({ "doctor" : {$ref : "user", $id : 1, $db : "health"},"workplaceid" : {$ref : "workplace", $id : 1, $db : "health"}, slot_duration:15,slots_desc:[{day:["monday","tuesday","thursday"],start_time:"10:30",end_time:"01:00"},{day:"friday",start_time:"11:30",end_time:"02:00"}],slots_booked:[{start_time:new Date('june 6 2014,10:30:00'),appointment_id:67},{start_time:new Date('june 6 2014,11:30:00'),appointment_id:87}]});
+db.wk_desc.insert({ "doctor" : {$ref : "doctor", $id : 1, $db : "meteor"},"workplaceid" : {$ref : "workplace", $id : 1, $db : "meteor"}, slot_duration:15,slots_desc:[{day:["monday","tuesday","thursday"],start_time:"10:30",end_time:"01:00"},{day:"friday",start_time:"11:30",end_time:"02:00"}],slots_booked:[{start_time:new Date('june 6 2014,10:30:00'),appointment_id:67},{start_time:new Date('june 6 2014,11:30:00'),appointment_id:87}]});
 db.wk_desc.ensureIndex({"doctor.$id":1});
 db.wk_desc.ensureIndex({"workplaceid.$id":1});
 db.wk_desc.ensureIndex({"slots_desc.day":1});

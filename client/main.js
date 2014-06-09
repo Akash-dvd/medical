@@ -1,0 +1,12 @@
+Meteor.subscribe('notifications');
+//Meteor.subscribe('blood_requests');
+//Meteor.subscribe('health_profile');
+//Meteor.subscribe('fake_user');
+//Meteor.subscribe('events');
+//Meteor.subscribe('reminders');
+//Meteor.subscribe('cases');
+//Meteor.subscribe('appointments');
+//Meteor.subscribe('users');
+//Meteor.subscribe('doctor_extra');
+Meteor.subscribe('workplace');
+//Meteor.subscribe('wk_desc');

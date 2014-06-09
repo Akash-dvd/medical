@@ -1,21 +1,21 @@
 <template name="index_workplace_list">
  <!--
-                                     <th>#</th>
-                                    <th>Name</th>
-                                    <th>Type</th>
-                                    <th>Description</th>
-                                    <th>Today's Slots</th>
-                                    <th>Actions</th> 
-                                    -->
+<th>#</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Today's Slots</th>
+<th>Actions</th> 
+-->
  <td>1</td>
  <td>{{name}}</td>
- <td class="text-navy"> <i class="fa fa-level-up"></i> 40% </td>
- <td><span class="pie">0.52,1.041</span></td>
+ <td class="text-navy"> <i class="fa fa-level-up"></i> Hospital </td>
+ <td><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><span class="bar-colours-1">9,9,9,9,9,9,9</span></button></td>
  <td><span class="pie">0.52,1.041</span></td>
  <td>
-   <button class="btn btn-primary " type="button"><i class="fa fa-check"></i>&nbsp;Start</button>
+   <a href="{{pathFor 'facility_all'}}"><button class="btn btn-primary btn-sm" type="button"><i class="fa fa-check"></i>&nbsp;Start</button></a>
    <div class="btn-group">
-     <button data-toggle="dropdown" class="btn btn-warning dropdown-toggle">Action <span class="caret"></span></button>
+     <button data-toggle="dropdown" class="btn btn-warning btn-sm dropdown-toggle">Action <span class="caret"></span></button>
      <ul class="dropdown-menu">
          <li><a href="buttons.html#">Start</a></li>
          <li><a href="buttons.html#">Pause</a></li>
