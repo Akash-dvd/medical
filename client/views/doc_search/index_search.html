@@ -1,0 +1,162 @@
+<template name="index_search">
+
+        <div class="wrapper wrapper-content animated fadeIn">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Basic IN+ Panel <small class="m-l-sm">This is custom panel</small></h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="tabs_panels.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="tabs_panels.html#">Config option 1</a>
+                                </li>
+                                <li><a href="tabs_panels.html#">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="panel blank-panel">
+
+                            <div class="panel-heading">
+                                <div class="panel-options">
+                                 
+                                    <ul class="nav nav-tabs">
+                                        <li class=""><a data-toggle="tab" href=""></a></li>
+                                        <li class="active"><a data-toggle="tab" href="#tab-1">All</a></li>
+                                        <li class=""><a data-toggle="tab" href="#tab-2">Doctors</a></li>
+                                        <li class=""><a data-toggle="tab" href="#tab-2">Hospitals</a></li>
+                                    </ul>
+                                    <div class="pull-right">
+                                      <ul class="pagination">
+                                        <li class="disabled"><a href="#">&laquo;</a></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">&raquo;</a></li>
+                                      </ul>
+                                    </div>
+                                    <div class="col-lg-1 col-xs-1">
+                                      <ul class="nav nav-tabs tabs-left vertical-text">
+                                        <li class="active"><a href="#tab-1" data-toggle="tab">All</a></li>
+                                        <li><a href="#tab-2" data-toggle="tab">Allopathic</a></li>
+                                        <li><a href="#tab-1" data-toggle="tab">Homeopathic</a></li>
+                                        <li><a href="#tab-2" data-toggle="tab">Ayurvedic</a></li>
+                                      </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel-body">
+
+                                <div class="tab-content">
+                                    <div id="tab-1" class="tab-pane active col-lg-11 col-xs-11 .col-lg-offset-1 .col-xs-offset-1">
+                                        {{>doc_search_template}}
+                                    </div>
+
+                                    <div id="tab-2" class="tab-pane col-lg-11 col-xs-11 .col-md-offset-3 .col-md-offset-3">
+                                        <strong>Donec quam felis</strong>
+
+                                        <p>Thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath </p>
+
+                                        <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet.</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+           
+ 
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Collaps panels</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="tabs_panels.html#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="tabs_panels.html#">Config option 1</a>
+                                    </li>
+                                    <li><a href="tabs_panels.html#">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="panel-body">
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h5 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="tabs_panels.html#collapseOne">Collapsible Group Item #1</a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body col-lg-6">
+                                                <div id='calendar'></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="tabs_panels.html#collapseTwo">Collapsible Group Item #2</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="tabs_panels.html#collapseThree">Collapsible Group Item #3</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+
+
+</template>

@@ -9,7 +9,9 @@
       "wizard": {},
       "morris": {},
       "peity": {},
-      "accounts-ui-bootstrap-3": {}
+      "accounts-ui-bootstrap-3": {},
+      "fullcalendar2.0": {},
+      "jq-knob": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -52,6 +54,16 @@
         "tag": "v0.3.0-1",
         "commit": "93ffa5d0e325dc7026de89f6d90c178fa04bdd3a"
       },
+      "fullcalendar2.0": {
+        "git": "https://github.com/J-Katzen/meteor-fullcalendar2.git",
+        "tag": "v1.0.1",
+        "commit": "7b035d430a10d65cec9520848046df4d2591dd09"
+      },
+      "jq-knob": {
+        "git": "https://github.com/strikeout/meteor-jq-knob.git",
+        "tag": "v0.0.1",
+        "commit": "41e5422d14b735d9fe6fd11d6bae11f1873f785d"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
@@ -67,6 +79,16 @@
         "tag": "v0.0.1",
         "commit": "a90a37d8562bb7d2ddd559801caf61e28b85da4e"
       },
+      "jquery-ui": {
+        "git": "https://github.com/TimHeckel/meteor-jquery-ui.git",
+        "tag": "v1.9.2",
+        "commit": "c437d45edcf1367df8d5ffa8bad2867758030bd2"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.6.0",
+        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
+      },
       "simple-schema": {
         "git": "https://github.com/aldeed/meteor-simple-schema.git",
         "tag": "v0.5.1",
@@ -76,11 +98,6 @@
         "git": "https://github.com/aldeed/meteor-collection2.git",
         "tag": "v0.4.1",
         "commit": "a9ffc9b285c3af8ad631f9cda4851b0ffc30c5ce"
-      },
-      "moment": {
-        "git": "https://github.com/acreeger/meteor-moment.git",
-        "tag": "v2.6.0",
-        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
       }
     }
   }

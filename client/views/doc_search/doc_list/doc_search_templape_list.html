@@ -1,0 +1,52 @@
+<template name="doc_search_template_list">
+<div class="row well ">
+  <div class="col-lg-3 col-xs-3 b-r">
+    <img src="{{image}}" class="img-circle"><br>
+     Name     : {{name}} <br>
+     Qualification : {{doctor_fields.doctor_qualification}}<br>
+     About-Me : <i class="fa fa-{{gender}}"></i> and {{doctor_fields.short_description}}<br>
+     Speciality : {{doctor_fields.speciality}}<br>
+  </div>
+  <div class="col-lg-3 col-xs-4 b-r">
+    <h3>Details</h3>
+    Degree : {{education_details.[0].course_name}}<br>
+    Year Of Passing : {{education_details.[0].year_of_passing}}<br>
+    Collage : {{education_details.[0].collage_name}}<br>
+    City : {{education_details.[0].city}}<br>
+    Country : {{education_details.[0].country}}<br>
+    
+  </div>
+  <div class="col-lg-3 col-xs-3 b-r">
+    <h3>Contact Informations</h3>
+    <i class="fa fa-envelope"></i> : <a href="mailto:{{email}}" >{{email}}</a><br>
+    <i class="fa fa-phone"></i> : {{contact_nos.[0]}} , {{contact_nos.[1]}}<br>
+    Street   : {{address.street}}<br>
+    Pin      : {{address.pin}}<br>
+    City     : {{city}}<br>
+    
+    
+  </div>
+  <div class="col-lg-3 col-xs-3">
+    <h3>Booking</h3>
+  </div>
+</div>
+</template>
+<!--
+{  "contact_nos" : [  "944568986",  "780984540" ], "dob" : ISODate("1983-07-06T00:00:00Z"), "gender" : "Male", "date_joined" : ISODate("2014-06-13T10:03:27.073Z"), "blood_group" : "O+", "city" : "Bangalore", "address" : { "street" : "abcd nagar", "pin" : "560037" }, "doctor_fields" : { "speciality" : "Dentist", "short_description" : "I am bad doctor", "doctor_qualification" : "SSLC" }, "education_details" : [ 	{ 	"course_name" : "M.B.B.S", 	"college_name" : "abcd", 	"city" : "bangalore", 	"country" : "India", 	"year_of_passing" : ISODate("1998-01-01T00:00:00Z") } ], "notes" : [ 	{ 	"created_at" : ISODate("2014-06-13T10:03:27.073Z"), 	"content" : " is a note" } ], "pinned_case_ids" : [  3,  6,  8 ], "image" : "img/a2.jpg" }
+
+
+
+  education_details: function() {return this.education_details;},
+  doctor_fields: function() {return this.doctor_fields;},
+  address: function() {return this.address;},
+  city: function() {return this.city;},
+  gender: function() {return this.gender.toLowerCase();},
+  name: function() {return this.name;},
+  contact_nos: function() {return this.contact_nos;},
+  name: function() {return this.name;},
+  email: function() {return this.email_id;},
+  image: function() {return this.image;},
+  short_description: function() {return this.short_description;}
+  
+  
+-->

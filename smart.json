@@ -7,6 +7,8 @@
     "wizard": {},
     "morris": {},
     "peity": {},
-    "accounts-ui-bootstrap-3": {}
+    "accounts-ui-bootstrap-3": {},
+    "fullcalendar2.0": {},
+    "jq-knob": {}
   }
 }
