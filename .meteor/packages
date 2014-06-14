@@ -1,0 +1,24 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+standard-app-packages
+insecure
+iron-router
+spin
+font-awesome
+jquery
+bootstrap-3
+styling
+wizard
+morris
+peity
+accounts-ui-bootstrap-3
+accounts-password
+accounts-facebook
+accounts-github
+accounts-twitter
+accounts-google
+fullcalendar2.0
+jq-knob
