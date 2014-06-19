@@ -9,10 +9,10 @@
       "wizard": {},
       "morris": {},
       "peity": {},
-      "accounts-ui-bootstrap-3": {},
       "fullcalendar2.0": {},
       "jq-knob": {},
-      "highcharts": {}
+      "highcharts": {},
+      "accounts-ui-bootstrap-3": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -50,15 +50,10 @@
         "tag": "v0.0.2",
         "commit": "6b7a89cf0d0b51d4e344e994a6bbface68ef965f"
       },
-      "accounts-ui-bootstrap-3": {
-        "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
-        "tag": "v0.3.0-1",
-        "commit": "93ffa5d0e325dc7026de89f6d90c178fa04bdd3a"
-      },
       "fullcalendar2.0": {
         "git": "https://github.com/J-Katzen/meteor-fullcalendar2.git",
-        "tag": "v1.0.2",
-        "commit": "e73476736a334a3d055c3d20d3f15e4451e0bdb9"
+        "tag": "v1.0.4",
+        "commit": "64b14f953f5f51a91ae12762c382d13ea6d441bd"
       },
       "jq-knob": {
         "git": "https://github.com/strikeout/meteor-jq-knob.git",
@@ -70,6 +65,11 @@
         "tag": "v0.1.0",
         "commit": "eca115ee55e1cc083e389171717760dbaa727534"
       },
+      "accounts-ui-bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
+        "tag": "v0.3.0-1",
+        "commit": "93ffa5d0e325dc7026de89f6d90c178fa04bdd3a"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
@@ -77,8 +77,8 @@
       },
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",
-        "tag": "v0.11.0",
-        "commit": "efdffcdf836a45c50c39696ede15399177ccb9fa"
+        "tag": "v0.12.0",
+        "commit": "24b0284425e446f2d88760a81052eefe74a20bbf"
       },
       "raphael": {
         "git": "https://github.com/chhib/meteor-raphael.git",

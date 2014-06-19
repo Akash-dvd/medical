@@ -1,8 +1,8 @@
 Notifications = new Meteor.Collection('notifications');
 Images = new Meteor.Collection('images');
-Blood_requests = new Meteor.Collection('blood_requests');
-Health_profile = new Meteor.Collection('health_profile');
-Fake_user = new Meteor.Collection('fake_user');
+Blood_Requests = new Meteor.Collection('blood_requests');
+Health_Profile = new Meteor.Collection('health_profile');
+Fake_User = new Meteor.Collection('fake_user');
 Events = new Meteor.Collection('events');
 Reminders = new Meteor.Collection('reminders');
 Cases = new Meteor.Collection('cases');
@@ -10,4 +10,4 @@ Appointments = new Meteor.Collection('appointments');
 //Users = new Meteor.Collection('users');
 Doctor = new Meteor.Collection('doctor');
 Workplace = new Meteor.Collection('workplace');
-Wk_desc = new Meteor.Collection('wk_desc');
+Wk_Desc = new Meteor.Collection('wk_desc');
