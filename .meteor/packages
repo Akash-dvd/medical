@@ -14,12 +14,11 @@ styling
 wizard
 morris
 peity
+fullcalendar2.0
+jq-knob
 accounts-ui-bootstrap-3
 accounts-password
 accounts-facebook
-accounts-github
-accounts-twitter
 accounts-google
-fullcalendar2.0
-jq-knob
-highcharts
+accounts-twitter
+jquery-steps
