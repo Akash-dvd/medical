@@ -1,0 +1,8 @@
+{
+     "name": "raphael",
+     "description": "Wrapper for g.Raphael.js",
+     "homepage": "https://github.com/Matthew-Odette/g.raphael",
+     "author": "David Andersson <david@royapp.com>",
+     "version": "0.0.1",
+     "git": "https://github.com/Matthew-Odette/g.raphael.git"
+}
