@@ -1,7 +1,6 @@
 Template.index_notifications_list.helpers({
   counter:function() {
-    count=1;
-    return count;
+    return this._id;
   },
   synapse: function() {
     return this.contents[0].message;

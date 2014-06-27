@@ -18,6 +18,10 @@ function getNext(name) {
 
 db.counters.insert(
   [ {
+      _id: "notification_id",
+      seq: 0
+   },
+   {
       _id: "user_id",
       seq: 0
    },
@@ -49,9 +53,18 @@ db.counters.insert(
       _id: "docnotes_id",
       seq: 0
    }]
-);
+); 
 
-db.notifications.insert({"owner" : {$ref : "user", $id : "1", $db : "meteor"}, "contents" : [{message : "This is notification","created_at" : new Date()},{message : "This is notification2","created_at" : new Date()}]});
+db.notifications.insert({_id : getNext("notification_id"),"owner" : {$ref : "user", $id : "1", $db : "meteor"}, "contents" : [{message : "This is notification","created_at" : new Date()},{message : "This is notification2","created_at" : new Date()}]});
+db.notifications.insert({_id : getNext("notification_id"),"owner" : {$ref : "user", $id : "1", $db : "meteor"}, "contents" : [{message : "This is notification","created_at" : new Date()},{message : "This is notification2","created_at" : new Date()}]});
+db.notifications.insert({_id : getNext("notification_id"),"owner" : {$ref : "user", $id : "1", $db : "meteor"}, "contents" : [{message : "This is notification","created_at" : new Date()},{message : "This is notification2","created_at" : new Date()}]});
+db.notifications.insert({_id : getNext("notification_id"),"owner" : {$ref : "user", $id : "1", $db : "meteor"}, "contents" : [{message : "This is notification","created_at" : new Date()},{message : "This is notification2","created_at" : new Date()}]});
+db.notifications.insert({_id : getNext("notification_id"),"owner" : {$ref : "user", $id : "1", $db : "meteor"}, "contents" : [{message : "This is notification","created_at" : new Date()},{message : "This is notification2","created_at" : new Date()}]});
+db.notifications.insert({_id : getNext("notification_id"),"owner" : {$ref : "user", $id : "1", $db : "meteor"}, "contents" : [{message : "This is notification","created_at" : new Date()},{message : "This is notification2","created_at" : new Date()}]});
+db.notifications.insert({_id : getNext("notification_id"),"owner" : {$ref : "user", $id : "1", $db : "meteor"}, "contents" : [{message : "This is notification","created_at" : new Date()},{message : "This is notification2","created_at" : new Date()}]});
+db.notifications.insert({_id : getNext("notification_id"),"owner" : {$ref : "user", $id : "1", $db : "meteor"}, "contents" : [{message : "This is notification","created_at" : new Date()},{message : "This is notification2","created_at" : new Date()}]});
+db.notifications.insert({_id : getNext("notification_id"),"owner" : {$ref : "user", $id : "1", $db : "meteor"}, "contents" : [{message : "This is notification","created_at" : new Date()},{message : "This is notification2","created_at" : new Date()}]});
+db.notifications.insert({_id : getNext("notification_id"),"owner" : {$ref : "user", $id : "1", $db : "meteor"}, "contents" : [{message : "This is notification","created_at" : new Date()},{message : "This is notification2","created_at" : new Date()}]});
 db.notifications.ensureIndex({"owner.$id":1},{background:true,unique:true});
 
 

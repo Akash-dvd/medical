@@ -1,27 +1,48 @@
 <template name="index_stats">
-   <div class="ibox float-e-margins">
-     <div class="ibox-title">
-         <h5>Blood Requests</h5> <span class="label label-primary">IN+</span>
-         <div class="ibox-tools">
-             <a class="collapse-link">
-                 <i class="fa fa-chevron-up"></i>
-             </a>
-             <a class="dropdown-toggle" data-toggle="dropdown" href="index.html#">
-                 <i class="fa fa-wrench"></i>
-             </a>
-             <ul class="dropdown-menu dropdown-user">
-                 <li><a href="index.html#">Config option 1</a>
-                 </li>
-                 <li><a href="index.html#">Config option 2</a>
-                 </li>
-             </ul>
-             <a class="close-link">
-                 <i class="fa fa-times"></i>
-             </a>
-         </div>
-     </div>
-     <div class="ibox-content">
-        <div id="morris-area-chart"></div>
+<!--
+  <div class="ibox float-e-margins">
+    <div class="ibox-title">
+      <h5>Simple one line Example </h5>
     </div>
-   </div>                     
+    <div class="ibox-content">
+      <div id="stats-morris-donut-chart" ></div>
+    </div>
+  </div>
+-->
+  
+
+
+  <div class="panel blank-panel">
+    <div class="panel-heading">
+      <div class="panel-options">
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#tab-14"><i class="fa fa-laptop"></i></a></li>
+          <li class=""><a data-toggle="tab" href="#tab-15"><i class="fa fa-desktop"></i></a></li>
+          <li class=""><a data-toggle="tab" href="#tab-16"><i class="fa fa-signal"></i></a></li>
+          <li class=""><a data-toggle="tab" href="#tab-17"><i class="fa fa-bar-chart-o"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="panel-body">
+      <div class="tab-content">
+        <div id="tab-14" class="tab-pane active">
+          <strong>Time Comparison</strong>
+          <div id="stats-morris-line-chart"></div>
+        </div>
+        <div id="tab-15" class="tab-pane">
+          <strong>Line Chart</strong>
+          <div id="stats-morris-donut-chart" ></div>
+        </div>
+        <div id="tab-16" class="tab-pane">
+          <strong>Appointment Distribution</strong>
+          <div id="stats-morris-bar-chart"></div>
+        </div>
+        <div id="tab-17" class="tab-pane">
+          <strong>Blood Requests</strong>
+          <div id="stats-morris-one-line-chart"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </template>

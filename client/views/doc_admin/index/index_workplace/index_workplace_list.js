@@ -17,7 +17,7 @@ Template.index_workplace_list.rendered = function () {
 })
 
 Morris.Area({
-        element: 'morris-area-chart',
+        element: 'index-workplace-morris-area-chart',
         data: [{
             period: '2010 Q1',
             iphone: 2666,
